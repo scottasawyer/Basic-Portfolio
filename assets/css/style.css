@@ -1,3 +1,228 @@
 body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/country-quilt.png");
+    background-repeat: repeat;
+    height: 120vh;
+    margin-left: auto;
+    margin-right: auto;
     width: 960px;
+}
+
+.container {
+    width: 960px;
+}
+
+h1, h2, h4 {
+    font-weight: bold;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2, h4 {
+    color: #4aaaa5;
+}
+
+#selfpic {
+    float:left;
+    margin-right: 10px;
+}
+
+
+/* Nav Bar */
+nav {
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+    width: 100%;
+    min-width: 960px;
+    height: 80px;
+}
+
+.top-name {
+    position: relative;
+    color: #fff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float: left;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.top-name::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    height: 80px;
+    background-color: #4aaaa5;
+    z-index: -1;
+}
+
+.menu li {
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 31px;
+    float: right;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.menu li a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+.menu li a:visited, .menu li a:active {
+    text-decoration: none;
+    color: #23527c;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #CF5D5D;
+}
+
+
+
+/* Section */
+section {
+    border: 1px solid #dddddd;
+    border-radius: 5px 0px;
+    margin: 40px auto;
+    padding: 20px 30px 50px 30px;
+    background-color: #fff;
+    line-height: 2em;
+}
+
+/* Horizontal Line */
+hr {
+    margin: 0px 15px 30px 15px;
+    border-top: 1px solid #dddddd;
+}
+
+.spacer {
+    content: ' ';
+    display: block;
+    clear: both;
+    margin: 20px;
+}
+
+
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    min-width: 960px;
+    height: 70px;
+    background-color: #666666;
+    border-top: 7px solid #4aaaa5;
+    bottom: 0px;
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.copyright {
+    bottom: 0px;
+    font-weight: normal;
+}
+
+
+
+/* Index page */
+#me-pic {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    float: left;
+}
+
+.info-list {
+    list-style-type: square;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+
+
+/* Portfoilo page */
+.cards {
+    float: left;
+    width: 320px;
+    height: 240px;
+    margin: 20px;
+    background-color: #666666;
+    opacity: .7;
+}
+
+.ptitle {
+    height: 70px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 48%;
+    box-sizing: border-box;
+}
+
+#num1 {
+    background-image:  url('../images/hangman.jpg');
+}
+
+#num2 {
+    background-image:  url('../images/dwarf.jpg');
+}
+
+#num3 {
+    background-image:  url('../images/trivia.jpg');
+    clear: both;
+}
+
+#num4 {
+    background-image:  url('../images/widget.jpg');
+}
+
+#num5 {
+    background-image:  url('../images/rps.jpg');
+    clear: both;
+}
+
+.portfolio .cards:hover {
+    border: 1px solid #4aaaa5;
+    box-shadow: 3px 4px 2px  #B0E0E6;
+    opacity: 1;
+}
+
+
+
+
+/* Contact page */
+.box-width {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 5px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.box-width:hover {
+    border: 1px solid #4aaaa5;
+    box-shadow: 3px 4px 2px  #B0E0E6;
+}
+
+
+.btn {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 8px 25px;
+    border: 1px solid #4aaaa5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: teal;
+    box-shadow: 3px 4px 2px  #B0E0E6;
+    color: #fff;
 }
